@@ -1,7 +1,7 @@
 <div id="background">
   <div id="result"></div>
   <div id="main">
-
+      
     <div class="first-row">
       <button class="btn-style del-bg num" {{action "input" "del" on="mouseUp"}}>Del</button>
       <button class="btn-style c-bg num" {{action "input" "C" on="mouseUp"}}>C</button>
@@ -31,7 +31,7 @@
     </div>
 
     <div class="rows">
-      <button class="num-bg zero" {{action "input" "0" on="mouseUp"}}>0</button>
+      <button class="num-bg zero delete" {{action "input" "0" on="mouseUp"}}>0</button>
       <button class="btn-style num-bg period fall-back" {{action "input" "." on="mouseUp"}}>.</button>
       <button class="eqn eqn-bg align" {{action "input" "exec" on="mouseUp"}}>=</button>
     </div>

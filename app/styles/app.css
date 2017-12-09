@@ -55,7 +55,7 @@ button {
   margin-top: 10px;
 }
 
-#delete {
+.delete {
   width: 110px;
   height: 50px;
   margin-left: 25px;
