@@ -6,18 +6,14 @@ let result = ''
 export default Component.extend({
   actions: {
     input(val) {
-      if (result) {
-        query = result
-        result = ''
-      }
       if (val == "exec") {
         try {
           result = eval(query)
         } catch (err) {
-          console.log("Operation Error!")
-          this.$("#result").text("Operation Error!")
+          result = "Operation Error!"
         } finally {
           this.$("#result").text(result)
+          query = result == "Operation Error!"? '': result
         }
         return
       }
